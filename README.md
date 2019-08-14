@@ -1,2 +1,2 @@
-# google-ping-api
-Google Pinger APi
+# Google Pinger PHP - Api
+%100 Güncell PHP APi
