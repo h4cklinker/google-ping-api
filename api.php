@@ -1,18 +1,9 @@
 <?php
-error_reporting(0);
-
-if(isset($_POST["urllist"])){
-    $url = explode("\n",$_POST["urllist"]);
-    foreach($url as $urls){
-$con = file_get_contents($urls);
-preg_match_all('@<title>(.*?)</title>@',$con,$title);
-
-$myBlogName = $title[1][0];
-$myBlogUrl = $urls;
-$myBlogUpdateUrl = $urls;
-$myBlogRSSFeedUrl = $urls;
-// Just and example so you need to put your own list here
-// List of Servers to Ping
+$myBlogName = "site title";
+$myBlogUrl = "url";
+$myBlogUpdateUrl = "url";
+$myBlogRSSFeedUrl = "url";
+//xml Rpc Ping Urls =
 $xmlRpcPingUrls[] = 'http://rpc.technorati.com/rpc/ping';
 $xmlRpcPingUrls[] = 'http://api.moreover.com/RPC2';
 $xmlRpcPingUrls[] = 'http://api.my.yahoo.com/RPC2';
